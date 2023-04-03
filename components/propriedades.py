@@ -11,14 +11,25 @@ import numpy as np
 import pandas as pd
 
 
-
-
-
-
 # ========= Layout ========= #
-layout = dbc.Col([
-                
+layout = dbc.Container([
+    dbc.Col([
+        dbc.Row([
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardBody([
+                        dbc.Col([
+                            dbc.Row([
+                                html.H4('Propriedade 1'),
+                                dcc.Dropdown(['Temperatura', 'Pressão', 'Volume Esp.', 'Energia Interna', 'Entalpia', 'Entropia'])
+                            ])
+                        ], md = 6)
+                    ])
+                ])
             ])
+        ])
+    ], md = 6)
+], fluid = True)
 
 
 

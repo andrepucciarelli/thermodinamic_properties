@@ -31,7 +31,9 @@ def renderizar_pagina(pathname):
     if pathname == '/' or '/inicio':
         return propriedades.layout
     else:
-        return html.H3('Página não existe')
+        dbc.Container([
+            html.H1('Página não encontrada')
+        ])
 
 
 
