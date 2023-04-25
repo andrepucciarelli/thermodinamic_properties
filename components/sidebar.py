@@ -31,7 +31,7 @@ layout = dbc.Container([
 
             
         ])
-    ], style = {'marginTop': '20px', 'height': '90vh'})               
+    ], style = {'height': '90vh'})               
 ], fluid = True)
 
 
